@@ -8,7 +8,7 @@ If the index is on the left edge of the array, then the left sum is 0 because th
 Return the leftmost pivot index. If no such index exists, return -1.
 */
 
-// trying to optimize... (wip)
+// trying to optimize... It works!
 
 public class Solution02b {
     public int PivotIndex(int[] nums) {
@@ -29,10 +29,10 @@ public class Solution02b {
         if(leftSum == rightSum)
             return pivot;
 
-        for(pivot=1; pivot<nums.Length-1; pivot++)
+        for(pivot=1; pivot<nums.Length; pivot++)
         {
             leftSum = leftSum + nums[pivot-1];
-            rightSum = rightSum - nums[pivot+1];
+            rightSum = rightSum - nums[pivot];
 
             if(leftSum == rightSum)
                 return pivot;   
