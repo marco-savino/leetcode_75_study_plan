@@ -1,0 +1,15 @@
+F:\stuff\back_to_code\leetcode_75_study_plan\obj\Debug\net6.0\leetcode_75_study_plan.csproj.AssemblyReference.cache
+F:\stuff\back_to_code\leetcode_75_study_plan\obj\Debug\net6.0\leetcode_75_study_plan.GeneratedMSBuildEditorConfig.editorconfig
+F:\stuff\back_to_code\leetcode_75_study_plan\obj\Debug\net6.0\leetcode_75_study_plan.AssemblyInfoInputs.cache
+F:\stuff\back_to_code\leetcode_75_study_plan\obj\Debug\net6.0\leetcode_75_study_plan.AssemblyInfo.cs
+F:\stuff\back_to_code\leetcode_75_study_plan\obj\Debug\net6.0\leetcode_75_study_plan.csproj.CoreCompileInputs.cache
+F:\stuff\back_to_code\leetcode_75_study_plan\bin\Debug\net6.0\leetcode_75_study_plan.exe
+F:\stuff\back_to_code\leetcode_75_study_plan\bin\Debug\net6.0\leetcode_75_study_plan.deps.json
+F:\stuff\back_to_code\leetcode_75_study_plan\bin\Debug\net6.0\leetcode_75_study_plan.runtimeconfig.json
+F:\stuff\back_to_code\leetcode_75_study_plan\bin\Debug\net6.0\leetcode_75_study_plan.dll
+F:\stuff\back_to_code\leetcode_75_study_plan\bin\Debug\net6.0\leetcode_75_study_plan.pdb
+F:\stuff\back_to_code\leetcode_75_study_plan\obj\Debug\net6.0\leetcode_75_study_plan.dll
+F:\stuff\back_to_code\leetcode_75_study_plan\obj\Debug\net6.0\refint\leetcode_75_study_plan.dll
+F:\stuff\back_to_code\leetcode_75_study_plan\obj\Debug\net6.0\leetcode_75_study_plan.pdb
+F:\stuff\back_to_code\leetcode_75_study_plan\obj\Debug\net6.0\leetcode_75_study_plan.genruntimeconfig.cache
+F:\stuff\back_to_code\leetcode_75_study_plan\obj\Debug\net6.0\ref\leetcode_75_study_plan.dll
