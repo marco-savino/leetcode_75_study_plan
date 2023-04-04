@@ -28,6 +28,9 @@ Constraints:
 Follow up: Suppose there are lots of incoming s, say s1, s2, ..., sk where k >= 109, and you want to check one by one to see if t has its subsequence. 
 In this scenario, how would you change your code?
 */
+
+// this versione seems faster even if It has two innested For... maybe because the outer For Is based on the shorter string?
+
 public class Solution04 {
     public bool IsSubsequence(string s, string t) {
 
