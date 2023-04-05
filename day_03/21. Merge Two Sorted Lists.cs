@@ -36,61 +36,49 @@ public class Solution05 {
 
         if(list1.val < list2.val)
         {
-            newNode = new ListNode(list1.val, null);
-            list1 = list1.next;
+            newNode = list1; // Decide who is the new node (create it, if necessary)
+            list1 = list1.next; // Go ahead with the list where new node has been red
         }
         else
         {
-            newNode = new ListNode(list2.val, null);
+            newNode = list2;
             list2 = list2.next;
         }
         
-        newHead = newNode;
-        prevNode = newNode;
+        newHead = newNode; // Outside the While, the first established new node is saved as head of the list 
+        prevNode = newNode; // The new node becomes the previous node
 
-        while(list1 != null || list2 != null)
+        
+        while(list1 != null || list2 != null) // Now let's continue until the end of BOTH lists, when there is nothing more to read
         {
-            if(list1 != null && list2 != null)
+            if(list1 != null && list2 != null) // Both nodes must contain something in order to confront it
             {
                 if(list1.val < list2.val)
                 {
-                    newNode = new ListNode(list1.val, null);
-                    list1 = list1.next;
+                    newNode = list1; // Decide who is the new node (create it, if necessary)
+                    list1 = list1.next; // Go ahead with the list where new node has been red
                 }
                 else
                 {
-                    newNode = new ListNode(list2.val, null);
+                    newNode = list2;
                     list2 = list2.next;
                 }
             }
-            else if(list2 == null)
+            else if(list2 == null)  // If one of the lists is empty, then just go ahead with the other list
             {
-                newNode = new ListNode(list1.val, null);
+                newNode = list1;
                 list1 = list1.next;
             }
             else
             {
-                newNode = new ListNode(list2.val, null);
+                newNode = list2;
                 list2 = list2.next;
             }
 
-            prevNode.next = newNode;
-            prevNode = newNode;
+            prevNode.next = newNode; // Now link the new node to the previous one by using .next 
+            prevNode = newNode; // Finally, the new node becomes the previous node
         }
 
         return newHead;
     }
 }
-
-/*
-
-1. create new node
-2. decide what other node must be linked to it
-3. Assign to .next the reference of the other node
-4. Link the new node to the previous node
-5. Repeat until the end
-
-1. Create the first node
-2. 
-
-*/
