@@ -34,12 +34,42 @@ public class Solution05 {
         else if(list2 == null)
             return list1;
 
+        if(list1.val < list2.val)
+        {
+            newNode = new ListNode(list1.val, null);
+            list1 = list1.next;
+        }
+        else
+        {
+            newNode = new ListNode(list2.val, null);
+            list2 = list2.next;
+        }
+        
+        newHead = newNode;
+        prevNode = newNode;
 
-        do
+        while(list1 != null || list2 != null)
         {
             if(newHead == null)
             {
-                if(list1.val < list2.val)
+                
+            }
+            else
+            {
+                if(list1 != null && list2 != null)
+                {
+                    if(list1.val < list2.val)
+                    {
+                        newNode = new ListNode(list1.val, null);
+                        list1 = list1.next;
+                    }
+                    else
+                    {
+                        newNode = new ListNode(list2.val, null);
+                        list2 = list2.next;
+                    }
+                }
+                else if(list2 == null)
                 {
                     newNode = new ListNode(list1.val, null);
                     list1 = list1.next;
@@ -49,41 +79,11 @@ public class Solution05 {
                     newNode = new ListNode(list2.val, null);
                     list2 = list2.next;
                 }
-                
-                newHead = newNode;
+ 
+                prevNode.next = newNode;
                 prevNode = newNode;
             }
-            else
-            {
-                if(list1 == null)
-                {
-                    prevNode.next = list2;
-                }
-                else if(list2 == null)
-                {
-                    prevNode.next = list1;
-                }
-                else
-                {
-                    if(list1.val < list2.val)
-                    {
-                        newNode = new ListNode(list1.val, null);
-                        list1 = list1.next;
-                    }  
-                    else
-                    {
-                        newNode = new ListNode(list2.val, null);
-                        list2 = list2.next;
-                    }
-                        
-                    prevNode.next = newNode;
-                    prevNode = newNode;
-                }
-            }
-    
         }
-        while(list1 != null && list2 != null);
-
 
         return newHead;
     }
